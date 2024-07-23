@@ -1,0 +1,84 @@
+.box_main {
+  width: 90vw;
+  margin: 15px auto;
+  padding: 30px;
+  background: #1c1e23;
+}
+
+.error_name {
+  text-transform: uppercase;
+  color: #1c1e23;
+}
+
+.error_name_activ {
+  color: red;
+}
+
+.form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.box_data {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 165px;
+}
+
+.data_name {
+  margin-bottom: 10px;
+}
+
+.data_input {
+  height: 35px;
+  padding-left: 10px;
+  border-radius: 8px;
+}
+
+.button {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background: #ef5922;
+}
+
+.box_table {
+  margin-top: 30px;
+  width: 550px;
+}
+
+.name_action {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.name_action_text {
+  width: 125px;
+  text-align: center;
+}
+
+.box_value_action {
+  padding: 20px;
+  border: 1px solid #f8f6e6;
+  border-radius: 10px;
+}
+
+.itemTreid {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 15px;
+}
+
+.item_del {
+  cursor: pointer;
+}
+
+.item_del:hover {
+  color: red;
+}
