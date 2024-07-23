@@ -5,6 +5,7 @@ interface dataDist {
 }
 
 export default function FormBord({ submit, inputData, inputDist }: dataDist) {
+  const nowData = new Date().toLocaleDateString("fr-ca");
   return (
     <>
       <form autoComplete="off" className="form" onSubmit={submit}>
@@ -13,10 +14,10 @@ export default function FormBord({ submit, inputData, inputDist }: dataDist) {
             Дата (ДД.ММ.ГГ)
           </label>
           <input
-            type="text"
+            type="date"
             name="name"
             className="data_input"
-            placeholder="XX.XX.XXXX"
+            max={nowData}
             onChange={inputData}
           />
         </div>
@@ -25,7 +26,7 @@ export default function FormBord({ submit, inputData, inputDist }: dataDist) {
             Пройдено км
           </label>
           <input
-            type="text"
+            type="number"
             name="distance"
             className="data_input"
             onChange={inputDist}
